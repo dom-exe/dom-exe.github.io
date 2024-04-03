@@ -1,10 +1,13 @@
-body {
+body 
+{
     background-color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-h1 {
+
+h1 
+{
     background-color:lightgrey;
     color: #333;
     text-align: center;
@@ -12,7 +15,9 @@ h1 {
     margin: 0;
     padding: 10px;
 }
-h2 {
+
+h2 
+{
     background-color:lightgrey;
     color: #333;
     text-align: center;
@@ -20,7 +25,22 @@ h2 {
     margin: 0;
     padding: 10px;
 }
-.button-group { 
+
+.working-button 
+{
+    width: 15%;
+    cursor: pointer;
+}
+
+.disabled-button 
+{
+    width: 15%;
+    cursor: not-allowed;
+
+}
+
+.button-group 
+{ 
     background-color: grey;
     border: darkgrey 1px solid;
     color: #333;
@@ -28,7 +48,8 @@ h2 {
     justify-content: center;
     padding: 1%;
 }
-p1 {
+
+p {
     color: #333;
     font-size: 16px;
     margin: 0;
