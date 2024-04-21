@@ -1,7 +1,13 @@
-document.getElementById("wheel-fitment").addEventListener("click", goToWheelFitment);
-
-function goToWheelFitment() 
+function readURL(input) 
 {
-    window.location.href = "wheel-fitment.html";
+    if (input.files && input.files[0]) 
+    {
+        var reader = new FileReader();
+        reader.onload = function (e)
+        {
+            $("blah")
+                .attr ("src", e.target.result)
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
 }
-
