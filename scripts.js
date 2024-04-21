@@ -1,16 +1,3 @@
-function readURL(input) 
-{
-    if (input.files && input.files[0]) 
-    {
-        var reader = new FileReader();
-        reader.onload = function (e)
-        {
-            $("blah")
-                .attr ("src", e.target.result)
-        }
-        reader.readAsDataURL(input.files[0]);
-    }
-}
 
 const image_ID = document.getElementById("getImage1");
 const floatingImageWrapper = document.querySelector(".floating-image-wrapper");
@@ -34,3 +21,4 @@ function imageClick(ele, index)
     image_ID.setAttribute("src", ele.getAttribute("src"))
     image_ID.setAttribute("data-image-ID", index)
 }
+

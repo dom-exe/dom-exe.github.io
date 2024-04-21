@@ -40,12 +40,23 @@
                     Engine 
             </button>
         </div>
+
+        <div>
+            <h3> Upload an image of your car to see how different wheels would look on it </h3>
+            <input type="file" id="image-upload" accept="image/*" onchange="displayImage(event)">
+            <img    id="uploaded-image" 
+                    src="#" 
+                    alt="Your Image"
+                    style="width:50%">
+
+        </div>
         
-        <p>  
-            <input type="file" onChange="readURL(this);">
-            <br>
-            <img id="blah" src="#" alt="Your image">
-        </p>
-        
-    </body>
+
+        <script>
+            function displayImage(event) {
+                var image = document.getElementById('uploaded-image');
+                image.src = URL.createObjectURL(event.target.files[0]);
+                image.style.display = 'block';
+            }
+        </script>
 </html>
