@@ -53,42 +53,100 @@
 
 		<div class="dropdown">
 			<button class="dropbtn">Select Modification</button>
-			<div class="dropdown-content" style="width:100%">
-				<a onClick="toggle_display('bm')" href="#">Naturally Aspirated</a>
-				<a onClick="toggle_display('fi')" href="#">Forced Induction</a>
-					<a onClick="toggle_display('itb')" href="#">ITBs</a>
-				<a onClick="toggle_display('es')" href="#">Engine Swap</a>
-			</div>
 
-			<div id="bm" class="hidden-text">
-				<h4>
-					Basic Mods
-				</h4>
+			<div class="dropdown-content" style="width:100%">
+				<a onClick="toggle_display('bm')" 
+				   href="#">
+				   Basic Mods
+				</a>
+				<a onClick="toggle_display('fi')" 
+				   href="#">
+				   Forced Induction
+				</a>
+				<a onClick="toggle_display('itb')" 
+				   href="#">
+				   ITBs
+				</a>
+				<a onClick="toggle_display('es')" 
+				   href="#">
+				   Engine Swap
+				</a>
+			</div>
+		</div>
+
+		<div id="bm" class="hidden-text">
+			<h4>
+				Basic Mods
+			</h4>
+			<p>
+				See below different types of basic modifications available 
+				to the entry-level enthusiast. <br>
+				Click the buttons below to see more information about each option. 
+			</p>
+
+			<button onClick="toggle_display('intake')"> 
+					Intake
+			</button>
+			<button onClick="toggle_display('exhaust')"> 
+					Exhaust
+			</button>
+
+			<div id="intake" class="hidden-text">
+				<h5>
+					Intake
+				</h5>
 				<p>
-					See below different types of basic modifications available 
-					to the entry-level enthusiast. <br>
-					Click the buttons below to see more information about each option. 
+					An intake system is a crucial part of a car's engine. 
+					It is responsible for providing the engine with the air it needs to run. 
+					An intake system can be upgraded to provide the engine with more air,
+					which can result in more power. <br>
+					It also comes with the added benefit of a better sound. Listen to the 
+					sound clip below for an example of an upgraded intake system. <br>
+					<audio controls>
+						<source src="Supporting Files\mx5-intake-sound.mp3" type="audio/mpeg">
+					</audio>
 				</p>
 			</div>
 
-			<div id="fi" class="hidden-text">
-				<h4>
-					Forced Induction
-				</h4>				
-			</div>
+			<div id="exhaust" class="hidden-text">
+				<h5>
+					Exhaust
+				</h5>
+				<p>
+					An exhaust system is another crucial part of a car's engine. 
+					It is responsible for removing the gases produced by the engine. 
+					An exhaust system can be upgraded to provide the engine with better 
+					performance. <br>
+					It also comes with the added benefit of a better sound. Listen to the 
+					sound clip below for an example of an upgraded exhaust system. One of 
+					these are simply a replacement backbox, the other sports a fully custom 
+					exhaust. <br>
+					<audio controls>
+						<source src="Supporting Files\mx5-backbox.mp3" type="audio/mpeg">
+					</audio>
+					<audio controls>
+						<source src="Supporting Files\mx5-custom-exhaust.mp3" type="audio/mpeg">
+					</audio>
+				</p>
 
-			<div id="itb" class="hidden-text">
-				<h4>
-					ITBs
-				</h4>
-			</div>
+		</div>
 
-			<div id="es" class="hidden-text">
-				<h4>
-					Engine Swaps
-				</h4>
-			</div>
+		<div id="fi" class="hidden-text">
+			<h4>
+				Forced Induction
+			</h4>				
+		</div>
 
+		<div id="itb" class="hidden-text">
+			<h4>
+				ITBs
+			</h4>
+		</div>
+
+		<div id="es" class="hidden-text">
+			<h4>
+				Engine Swaps
+			</h4>
 		</div>
 
 		<script>
