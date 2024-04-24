@@ -102,6 +102,7 @@
 					which can result in more power. <br>
 					It also comes with the added benefit of a better sound. Listen to the 
 					sound clip below for an example of an upgraded intake system. <br>
+					
 					<audio controls>
 						<source src="Supporting Files\mx5-intake-sound.mp3" type="audio/mpeg">
 					</audio>
@@ -128,6 +129,7 @@
 						<source src="Supporting Files\mx5-custom-exhaust.mp3" type="audio/mpeg">
 					</audio>
 				</p>
+			</div>
 
 		</div>
 
@@ -135,6 +137,50 @@
 			<h4>
 				Forced Induction
 			</h4>				
+
+			<p>
+				Forced induction is a method of increasing the power output of an engine. 
+				It involves compressing the air that enters the engine, which results in 
+				more air being forced into the engine. This can result in more power. <br>
+				There are two main types of forced induction: turbochargers and superchargers. 
+				Both of these methods can be used to increase the power output of an engine. <br>
+				Click the buttons below to see more information about each option.
+			</p>
+
+			<button onClick="toggle_display('turbo')"> 
+				Turbocharger
+			</button>
+			<button onClick="toggle_display('supercharger')"> 
+				Supercharger
+			</button>
+			
+			<div id="turbo" class="hidden-text">
+				<h5>
+					Turbocharger
+				</h5>
+				<p>
+					A turbocharger is a turbine spun by exhaust gases, which in turn sucks
+					in more air into the intake. Using exhaust gases means there is no 
+					drag on the engine, but their is turbo lag on larger platforms. <br>
+				</p>
+				<img src="Supporting Files\turbocharger.gif" 
+					 alt="Turbocharger" 
+					 style="width:50%">
+			</div>
+
+			<div id="supercharger" class="hidden-text">
+				<h5>
+					Supercharger
+				</h5>
+				<p>
+					A supercharger is a belt-driven compressor that forces more air into 
+					the engine. This means there is no lag, but there is a parasitic loss 
+					on the engine. <br>
+				</p>
+				<img src="Supporting Files\supercharger.gif" 
+					 alt="Supercharger" 
+					 style="width:50%">
+			</div>
 		</div>
 
 		<div id="itb" class="hidden-text">
