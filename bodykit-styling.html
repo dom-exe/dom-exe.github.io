@@ -7,7 +7,7 @@
         <title> Car Customisation </title>
     </head>
 
-    <body>
+    <body> 
         <h1> Car Customisation </h1>
         <h2> Bodykit Styling </h2>
         
@@ -44,18 +44,46 @@
             </button>
         </div>
         
-        <p>  
-            <img src="OEM-MK2.jpg" alt="OEM MK2 MX5 without bodykit"
-                onClick="imageFun1()" id="getImage1">
-        </p>
-
-        <div class="floating-image-wrapper">
-			<img src="bodykit1.jpg" onClick="imageClick(this, 1)">
-			<img src="bodykit2.jpg" onClick="imageClick(this, 2)">
-			<img src="bodykit3.jpg" onClick="imageClick(this, 3)">
-			<img src="bodykit4.jpg" onClick="imageClick(this, 4)">
-			<img src="bodykit5.jpg" onClick="imageClick(this, 5)">
+        <div>  
+            <img src="Supporting Files/stock.png" 
+                 alt="OEM MK2 MX5 without bodykit"
+                 onClick="imageFun1()" id="getImage1"
+                 width="50%">
         </div>
 
+        <div class="floating-image-wrapper">
+			<img src="Supporting Files/stock.png" 
+				 onClick="imageClick(this, 1)"
+				 width="10%">
+			<img src="Supporting Files/carbonmiata.jpeg" 
+				 onClick="imageClick(this, 2)"
+				 width="10%">
+			<img src="Supporting Files/duce.webp" 
+				 onClick="imageClick(this, 3)"
+				 width="10%">
+			<img src="bodykit4.jpg" 
+				 onClick="imageClick(this, 4)"
+				 width="10%">
+ 			<img src="bodykit5.jpg" 
+				 onClick="imageClick(this, 5)"
+				 width="10%">
+        </div>
+
+		<div>
+			<h3>Attention</h3>
+
+			<p>
+				Please note that the bodykit styling tool is currently under maintenance. <br>
+				This page currently only displays a static image of the selected bodykit. <br>
+				We apologise for any inconvenience caused. <br>
+				Please check back later for updates.
+			</p>
+		</div>
+
+		<script>
+			function imageClick(img, num) {
+				document.getElementById("getImage1").src = img.src;
+			}
+		</script>
     </body>
 </html>

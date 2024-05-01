@@ -45,27 +45,71 @@
         </div>
 
         <div>
-            <h3>Instructions:</h3>
+            <h3>Car Selection:</h3>
+
             <p>
                 1. Click the "Choose File" button to upload a side-profile of your car <br>
                 2. Select a wheel from the list below <br>
                 3. Click "Apply" to see how the wheel looks on your car
             </p>
+
             <input type="file" id="image-upload" accept="image/*" onchange="displayImage(event)">
             <img    id="uploaded-image" 
                     src="#" 
                     alt="Your Image"
                     style="width:50%">
-
         </div>
         
+        <div>
+            <h3>Wheel Selection:</h3>
+
+            <select id="wheel-selection">
+                <option value="stock">Stock</option>
+                <option value="enkei">Enkei RPF1</option>
+                <option value="bbs">BBS LM</option>
+            </select>
+
+            <button onclick="applyWheel()">Apply</button>
+        </div>
+
+        <div>
+            <h3>Attention</h3>
+
+            <p>
+                Please note that the wheel styling tool is currently under maintenance. <br>
+                This page currently only displays a static image of the wheel. <br>
+                We apologise for any inconvenience caused. <br>
+                Please check back later for updates.
+        </div>
+
         <script>
             function displayImage(event) {
                 var image = document.getElementById('uploaded-image');
                 image.src = URL.createObjectURL(event.target.files[0]);
                 image.style.display = 'block';
             }
+
+            function displayImage(event) {
+                var image = document.getElementById('uploaded-image');
+                image.src = URL.createObjectURL(event.target.files[0]);
+                image.style.display = 'block';
+            }
+
+            function applyWheel() {
+                var wheel = document.getElementById('wheel-selection').value;
+                var image = document.getElementById('uploaded-image');
+                switch(wheel) {
+                    case 'stock':
+                        image.src = 'Supporting Files/wheel_stock.jpg';
+                        break;
+                    case 'enkei':
+                        image.src = 'Supporting Files/enkei.jpeg';
+                        break;
+                    case 'bbs':
+                        image.src = 'Supporting Files/bbs.jpg';
+                        break;
+                }
+            }
         </script>
-        
     </body>
 </html>

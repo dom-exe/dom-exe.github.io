@@ -44,32 +44,28 @@
 			</button>
         </div>
 
-		<h3>Instructions:</h3>
-        <p>  
-			1. Select the type of modification you would like to install <br>
-			2. Select your preferred brand <br>
-			3. View the information about the modification
-        </p>
+		<div>
+			<h3>Instructions:</h3>
+	        <p>  
+				1. Select the type of modification you would like to install <br>
+				2. Select your preferred brand <br>
+				3. View the information about the modification
+        	</p>
+		</div>
 
 		<div class="dropdown">
 			<button class="dropbtn">Select Modification</button>
 
 			<div class="dropdown-content" style="width:100%">
-				<a onClick="toggle_display('bm')" 
+				<a onClick="toggle_display('bm')
+							hide_element('fi')" 
 				   href="#">
 				   Basic Mods
 				</a>
-				<a onClick="toggle_display('fi')" 
+				<a onClick="toggle_display('fi')
+							hide_element('bm')" 
 				   href="#">
 				   Forced Induction
-				</a>
-				<a onClick="toggle_display('itb')" 
-				   href="#">
-				   ITBs
-				</a>
-				<a onClick="toggle_display('es')" 
-				   href="#">
-				   Engine Swap
 				</a>
 			</div>
 		</div>
@@ -84,10 +80,12 @@
 				Click the buttons below to see more information about each option. 
 			</p>
 
-			<button onClick="toggle_display('intake')"> 
+			<button onClick="toggle_display('intake'), 
+							 hide_element('exhaust')"> 
 					Intake
 			</button>
-			<button onClick="toggle_display('exhaust')"> 
+			<button onClick="toggle_display('exhaust')
+							 hide_element('intake')"> 
 					Exhaust
 			</button>
 
@@ -130,7 +128,6 @@
 					</audio>
 				</p>
 			</div>
-
 		</div>
 
 		<div id="fi" class="hidden-text">
@@ -147,11 +144,13 @@
 				Click the buttons below to see more information about each option.
 			</p>
 
-			<button onClick="toggle_display('turbo')"> 
-				Turbocharger
+			<button onClick="toggle_display('turbo')
+							 hide_element('supercharger')"> 
+					Turbocharger
 			</button>
-			<button onClick="toggle_display('supercharger')"> 
-				Supercharger
+			<button onClick="toggle_display('supercharger')
+							 hide_element('turbo')"> 
+					Supercharger
 			</button>
 			
 			<div id="turbo" class="hidden-text">
@@ -183,23 +182,16 @@
 			</div>
 		</div>
 
-		<div id="itb" class="hidden-text">
-			<h4>
-				ITBs
-			</h4>
-		</div>
-
-		<div id="es" class="hidden-text">
-			<h4>
-				Engine Swaps
-			</h4>
-		</div>
-
 		<script>
 			function toggle_display(paragraph)
 			{
 				var element = document.getElementById(paragraph)
 				element.classList.toggle("hidden-text")
+			}
+			function hide_element(paragraph)
+			{
+				var element = document.getElementById(paragraph)
+				element.classList.add("hidden-text")
 			}
 		</script>
 		

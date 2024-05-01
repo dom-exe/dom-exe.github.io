@@ -115,6 +115,7 @@ p {
     background-color: lightgrey;
 }
 
+/* Hide text */
 .hidden-text
 {
     display: none;
