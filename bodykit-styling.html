@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="stylesheet.css">
-    <scripts src="script.js"> </scripts>
+    <link rel="stylesheet" 
+          href="stylesheet.css">
+    <script src="scripts.js"> </script>
 
     <head>
         <title> Car Customisation </title>
@@ -45,28 +46,25 @@
         </div>
         
         <div>  
-            <img src="Supporting Files/stock.png" 
+            <img src="Supporting Files/bodykit-stock.png" 
                  alt="OEM MK2 MX5 without bodykit"
-                 onClick="imageFun1()" id="getImage1"
+                 id="bodykit-styling-original"
                  width="50%">
         </div>
 
         <div class="floating-image-wrapper">
-			<img src="Supporting Files/stock.png" 
-				 onClick="imageClick(this, 1)"
-				 width="10%">
-			<img src="Supporting Files/carbonmiata.jpeg" 
-				 onClick="imageClick(this, 2)"
-				 width="10%">
-			<img src="Supporting Files/duce.webp" 
-				 onClick="imageClick(this, 3)"
-				 width="10%">
-			<img src="bodykit4.jpg" 
-				 onClick="imageClick(this, 4)"
-				 width="10%">
- 			<img src="bodykit5.jpg" 
-				 onClick="imageClick(this, 5)"
-				 width="10%">
+			<img src="Supporting Files/bodykit-stock.png" 
+				 onClick="imageClick(this)"
+				 width="12.5%">
+			<img src="Supporting Files/bodykit-carbonmiata.jpeg" 
+				 onClick="imageClick(this)"
+				 width="12.5%">
+			<img src="Supporting Files/bodykit-duce.webp" 
+				 onClick="imageClick(this)"
+				 width="12.5%">
+			<img src="Supporting Files/bodykit-fastback.jpg" 
+				 onClick="imageClick(this)"
+				 width="12.5%">
         </div>
 
 		<div>
@@ -79,11 +77,5 @@
 				Please check back later for updates.
 			</p>
 		</div>
-
-		<script>
-			function imageClick(img, num) {
-				document.getElementById("getImage1").src = img.src;
-			}
-		</script>
     </body>
 </html>

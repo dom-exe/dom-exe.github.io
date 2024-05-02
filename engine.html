@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="stylesheet.css">
-    <scripts src="script.js"> </scripts>
+    <link rel="stylesheet" 
+		  href="stylesheet.css">
+    <script src="scripts.js"> </script>
 
     <head>
         <title> Car Customisation </title>
@@ -56,21 +57,23 @@
 		<div class="dropdown">
 			<button class="dropbtn">Select Modification</button>
 
-			<div class="dropdown-content" style="width:100%">
-				<a onClick="toggle_display('bm')
-							hide_element('fi')" 
+			<div class="dropdown-content" 
+				 style="width:100%">
+				<a onClick="toggle_display('basic-mods')
+							hide_element('forced-induction')" 
 				   href="#">
 				   Basic Mods
 				</a>
-				<a onClick="toggle_display('fi')
-							hide_element('bm')" 
+				<a onClick="toggle_display('forced-induction')
+							hide_element('basic-mods')" 
 				   href="#">
 				   Forced Induction
 				</a>
 			</div>
 		</div>
 
-		<div id="bm" class="hidden-text">
+		<div id="basic-mods" 
+			class="hidden-text">
 			<h4>
 				Basic Mods
 			</h4>
@@ -89,7 +92,8 @@
 					Exhaust
 			</button>
 
-			<div id="intake" class="hidden-text">
+			<div id="intake" 
+				 class="hidden-text">
 				<h5>
 					Intake
 				</h5>
@@ -102,12 +106,14 @@
 					sound clip below for an example of an upgraded intake system. <br>
 					
 					<audio controls>
-						<source src="Supporting Files\mx5-intake-sound.mp3" type="audio/mpeg">
+						<source src="Supporting Files\intake-aftermarket.mp3" 
+								type="audio/mpeg">
 					</audio>
 				</p>
 			</div>
 
-			<div id="exhaust" class="hidden-text">
+			<div id="exhaust" 
+				 class="hidden-text">
 				<h5>
 					Exhaust
 				</h5>
@@ -121,16 +127,19 @@
 					these are simply a replacement backbox, the other sports a fully custom 
 					exhaust. <br>
 					<audio controls>
-						<source src="Supporting Files\mx5-backbox.mp3" type="audio/mpeg">
+						<source src="Supporting Files\exhaust-backbox.mp3" 
+								type="audio/mpeg">
 					</audio>
 					<audio controls>
-						<source src="Supporting Files\mx5-custom-exhaust.mp3" type="audio/mpeg">
+						<source src="Supporting Files\exhaust-custom.mp3" 
+								type="audio/mpeg">
 					</audio>
 				</p>
 			</div>
 		</div>
 
-		<div id="fi" class="hidden-text">
+		<div id="forced-induction" 
+			 class="hidden-text">
 			<h4>
 				Forced Induction
 			</h4>				
@@ -153,7 +162,8 @@
 					Supercharger
 			</button>
 			
-			<div id="turbo" class="hidden-text">
+			<div id="turbo" 
+				 class="hidden-text">
 				<h5>
 					Turbocharger
 				</h5>
@@ -162,12 +172,13 @@
 					in more air into the intake. Using exhaust gases means there is no 
 					drag on the engine, but their is turbo lag on larger platforms. <br>
 				</p>
-				<img src="Supporting Files\turbocharger.gif" 
+				<img src="Supporting Files\forced-induction-turbocharger.gif" 
 					 alt="Turbocharger" 
 					 style="width:50%">
 			</div>
 
-			<div id="supercharger" class="hidden-text">
+			<div id="supercharger" 
+				 class="hidden-text">
 				<h5>
 					Supercharger
 				</h5>
@@ -176,24 +187,10 @@
 					the engine. This means there is no lag, but there is a parasitic loss 
 					on the engine. <br>
 				</p>
-				<img src="Supporting Files\supercharger.gif" 
+				<img src="Supporting Files\forced-induction-supercharger.gif" 
 					 alt="Supercharger" 
 					 style="width:50%">
 			</div>
 		</div>
-
-		<script>
-			function toggle_display(paragraph)
-			{
-				var element = document.getElementById(paragraph)
-				element.classList.toggle("hidden-text")
-			}
-			function hide_element(paragraph)
-			{
-				var element = document.getElementById(paragraph)
-				element.classList.add("hidden-text")
-			}
-		</script>
-		
     </body> 
 </html>

@@ -1,6 +1,5 @@
 /* General body of all pages */
-body 
-{
+body {
     background-color: white;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,8 +7,7 @@ body
 }
 
 /* Header of all pages */
-h1 
-{
+h1 {
     background-color:lightgrey;
     color: #333;
     text-align: center;
@@ -19,8 +17,7 @@ h1
 }
 
 /* Webpage title */
-h2 
-{
+h2 {
     background-color:lightgrey;
     color: #333;
     text-align: center;
@@ -30,22 +27,19 @@ h2
 }
 
 /* Buttons in navigation bar */
-.working-button 
-{
+.working-button {
     width: 15%;
     cursor: pointer;
 }
 
-.disabled-button 
-{
+.disabled-button {
     width: 15%;
     cursor: not-allowed;
 
 }
 
 /* Navigation bar */
-.button-group 
-{ 
+.button-group { 
     background-color: grey;
     border: darkgrey 1px solid;
     color: #333;
@@ -63,23 +57,20 @@ p {
 }
 
 /* Dropdown menu container*/
-.dropdown
-{
+.dropdown {
     position: relative;
     display: inline-block;
 }
 
 /* Dropdown menu button */
-.dropbtn
-{
+.dropbtn {
     border: darkgrey 1px solid;
     color: #333;
     padding: 2%;
 }
 
 /* Dropdown menu content */
-.dropdown-content
-{
+.dropdown-content {
     display: none;
     position: absolute;
     min-width: 160px;
@@ -87,20 +78,17 @@ p {
 }
 
 /* Hover effect on dropdown menu */
-.dropdown:hover .dropdown-content
-{
+.dropdown:hover .dropdown-content {
     display: inline-block;
 } 
 
 /* Hover effect on dropdown menu button */
-.dropdown:hover .dropbtn
-{
+.dropdown:hover .dropbtn {
     cursor: pointer;
 }
 
 /* Dropdown menu links */
-.dropdown-content a
-{
+.dropdown-content a {
     color: #333;
     padding: 12px 16px;
     text-decoration: none;
@@ -110,13 +98,11 @@ p {
 }
 
 /* Hover effect on dropdown menu links */
-.dropdown-content a:hover
-{
+.dropdown-content a:hover {
     background-color: lightgrey;
 }
 
 /* Hide text */
-.hidden-text
-{
+.hidden-text {
     display: none;
 }
